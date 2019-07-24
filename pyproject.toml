@@ -2,7 +2,7 @@
 name = "hexlet-pairs"
 version = "0.1.1"
 description = "A SICP'ish functional pairs implemented in Python"
-authors = ["Hexlet <team@hexlet.io>"]
+authors = ["Hexlet Team <info@hexlet.io>"]
 license = "ISC"
 readme = "README.md"
 homepage = "https://github.com/hexlet-components/python-pairs"
