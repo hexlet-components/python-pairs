@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/hexlet-components/python-pairs.svg?branch=master)](https://travis-ci.org/hexlet-components/python-pairs)
 ### hexlet-pairs
 
 A SICP'ish Functional Pairs implemented in Python.
