@@ -2,17 +2,18 @@
 
 """SICP'ish functional pairs implemented in Python."""
 
-from typing import Any, Callable, TypeVar
+from typing import Any, Callable, TypeVar, Union
 
 __all__ = ('Pair', 'cons', 'car', 'cdr', 'is_pair', 'to_string')
 
 
 A = TypeVar('A')
+B = TypeVar('B')
 
-Pair = Callable[[bool], A]
+Pair = Callable[[bool], Union[A, B]]
 
 
-def cons(a: A, b: A) -> Pair:
+def cons(a: A, b: B) -> Pair:
     """Create a new pair."""
     def pair(car_is_need):
         if car_is_need:
@@ -26,7 +27,7 @@ def car(pair: Pair) -> A:
     return pair(True)
 
 
-def cdr(pair):
+def cdr(pair: Pair) -> B:
     """Return a second element of pair."""
     return pair(False)
 
