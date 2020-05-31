@@ -1,3 +1,4 @@
+[![github action status](https://github.com/hexlet-components/python-pairs/workflows/Python%20CI/badge.svg)](https://github.com/hexlet-components/python-pairs/actions)
 # python-pairs
 
 A SICP'ish Functional Pairs implemented in Python.
