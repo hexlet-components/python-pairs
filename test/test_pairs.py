@@ -17,6 +17,6 @@ def test_cons_car_cdr():
 
 def test_to_string():
     """Test to_string conversion."""
-    assert pairs.to_string(pairs.cons(None, True)) == '(None, True)', (
+    assert pairs.to_string(pairs.cons(None, True)) == 'cons(None, True)', (
         'Should return a proper representation.'
     )
