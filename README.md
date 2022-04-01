@@ -23,7 +23,7 @@ pip install hexlet-pairs
     >>> pairs.cdr(p)
     'foo'
     >>> print(pairs.to_string(p))
-    (42, 'foo')
+    cons(42, 'foo')
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about)
 

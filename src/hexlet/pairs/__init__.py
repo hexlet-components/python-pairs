@@ -39,4 +39,4 @@ def is_pair(arg: Any) -> bool:
 
 def to_string(pair: Pair) -> str:
     """Convert a pair to the str."""
-    return repr((car(pair), cdr(pair)))
+    return 'cons({a!r}, {b!r})'.format(a=car(pair), b=cdr(pair))
