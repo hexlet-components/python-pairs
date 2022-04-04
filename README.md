@@ -19,7 +19,7 @@ pip install hexlet-pairs
     pairs.is_pair(p)  # True
     pairs.car(p)  # 42
     pairs.cdr(p)  # 'foo'
-    print(pairs.to_string(p))  # (42, 'foo')
+    print(pairs.to_string(p))  # cons(42, 'foo')
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about)
 
