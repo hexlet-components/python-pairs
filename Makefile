@@ -1,21 +1,15 @@
 export PYTHONPATH=src
 
-.PHONY: all
-all: lint pytest doctest
+check: test lint
 	@echo Done!
 
-.PHONY: pytest
-pytest: lint
-	@poetry run pytest test
+test: lint
+	@uv run pytest test
 
-.PHONY: doctest
-doctest:
-	@poetry run python -m doctest -v README.md
-
-.PHONY: lint
 lint:
-	@poetry run flake8 --statistics src test
+	@uv run ruff check src test
 
-.PHONY: install
 install:
-	@poetry install
+	@uv sync
+
+.PHONY: all test install
