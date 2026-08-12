@@ -9,7 +9,10 @@ lint:
 test:
 	@uv run pytest test
 
-check: install lint test
+doctest:
+	@uv run pytest --doctest-glob='*.md' README.md
+
+check: install lint test doctest
 
 build:
 	@uv build
@@ -17,4 +20,4 @@ build:
 publish: build
 	@uv publish --trusted-publishing always
 
-.PHONY: install lint test check build publish
+.PHONY: install lint test doctest check build publish
