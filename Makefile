@@ -1,15 +1,20 @@
 export PYTHONPATH=src
 
-check: test lint
-	@echo Done!
-
-test: lint
-	@uv run pytest test
+install:
+	@uv sync
 
 lint:
 	@uv run ruff check src test
 
-install:
-	@uv sync
+test:
+	@uv run pytest test
 
-.PHONY: all test install
+check: install lint test
+
+build:
+	@uv build
+
+publish: build
+	@uv publish --trusted-publishing always
+
+.PHONY: install lint test check build publish
