@@ -4,7 +4,7 @@ install:
 	@uv sync
 
 lint:
-	@uv run ruff check src test
+	@uv run ruff check .
 
 test:
 	@uv run pytest test
