@@ -3,7 +3,8 @@
   "packages": {
     ".": {
       "release-type": "python",
-      "package-name": "hexlet-pairs"
+      "package-name": "hexlet-pairs",
+      "include-component-in-tag": false
     }
   }
 }
