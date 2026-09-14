@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/hexlet-components/python-pairs/compare/v0.1.3...v0.1.4) (2026-09-14)
+
+
+### Documentation
+
+* **readme:** убрать упоминание закрытого hexlet-friends ([bf017f7](https://github.com/hexlet-components/python-pairs/commit/bf017f71076988a29e5a7ea4a98244fd158631cd))
+
 ## [0.1.3](https://github.com/hexlet-components/python-pairs/compare/v0.1.2...v0.1.3) (2026-08-13)
 
 
