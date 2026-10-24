@@ -4,21 +4,23 @@
 
 from typing import Any, Callable, TypeVar, Union
 
-__all__ = ('Pair', 'cons', 'car', 'cdr', 'is_pair', 'to_string')
+__all__ = ("Pair", "cons", "car", "cdr", "is_pair", "to_string")
 
 
-A = TypeVar('A')
-B = TypeVar('B')
+A = TypeVar("A")
+B = TypeVar("B")
 
 Pair = Callable[[bool], Union[A, B]]
 
 
 def cons(a: A, b: B) -> Pair:
     """Create a new pair."""
+
     def pair(car_is_need):
         if car_is_need:
             return a
         return b
+
     return pair
 
 
@@ -39,4 +41,4 @@ def is_pair(arg: Any) -> bool:
 
 def to_string(pair: Pair) -> str:
     """Convert a pair to the str."""
-    return 'cons({a!r}, {b!r})'.format(a=car(pair), b=cdr(pair))
+    return "cons({a!r}, {b!r})".format(a=car(pair), b=cdr(pair))
